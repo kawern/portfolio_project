@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/9b6af8cf82.js" crossorigin="anonymous"></script>
+    <title>Kasper Lisberg - Portfolio</title>
+</head>
+
+<body>
+    <!-- BURGER MENU -->
+    <div id="burger"><i class="fas fa-bars"></i> </div>
+    <!-- BURGER MENU END -->
+    <header>
+        <!-- NAVIGATION-->
+        <nav>
+            <a href="../index.html"><img class="logo" src="../images/logo.svg"
+                    alt="LOGO - Click me to get to the home page!"></a>
+            <!-- MENU ITEMS -->
+            <ul>
+                <a href="../index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="../about.html">
+                    <li>ABOUT</li>
+                </a>
+                <a href="../work.html">
+                    <li>MY WORK</li>
+                </a>
+                <a href="../contact/">
+                    <li>CONTACT</li>
+                </a>
+            </ul>
+            <!-- MENU ITEMS END-->
+
+
+            <!-- SOCIAL MEDIA ICONS - START-->
+            <div class="some">
+                <img src="../images/fb.svg" alt="Facebook logo">
+                <img src="../images/insta.svg" alt="Instagram logo"></div>
+            <!-- SOCIAL MEDIA ICONS - END-->
+
+
+            <!-- COPYRIGHT START-->
+            <div class="copyright">
+                <p>&#169; 2020</p>
+                <p>Kasper Lisberg</p>
+            </div>
+            <!-- COPYRIGHT END-->
+
+        </nav><!-- NAV END-->
+    </header>
+
+    <!-- WRAPPER START-->
+    <div class="wrapper">
+        <h1>CONTACT</h1>
+        <h3>LET ME HELP YOU!</h3>
+        <div class="contact">
+
+            <section>
+
+                <H5>FILL OUT THE FORM BELOW AND I WILL GET BACK TO YOU WITHIN 24H</H5>
+            </section>
+            <section>
+                <!-- Nextkbh Formmail pearl-script -->
+                <form method="post" name="sendform" action="https://script.elev.nextkbh.dk/cgi-bin/FormMail.pl"
+                    onsubmit="return valider(this)">
+
+                    <!-- Modtageradresse -->
+                    <input type="hidden" name="recipient" value="kasp8741@edu.nextkbh.dk" />
+
+                    <!-- Emne på email -->
+                    <input type="hidden" name="subject" value="Besked fra kontaktformular fra Portfolio" />
+
+                    <!-- Success -->
+                    <input type="hidden" name="redirect"
+                        value="https://kasp8741.elev.nextkbh.dk/portfolio/contact/thanks.html" />
+
+                    <input name="return_link_url" type="hidden" />
+
+                    <!-- HTML FORMULAR FELTER -->
+                    <label>NAME</label>
+                    <input type="text" name="name" placeholder="Enter your name here">
+                    <label>EMAIL</label>
+                    <input type="email" name="email" placeholder="Enter your email here">
+                    <label>YOUR MESSAGE</label>
+                    <textarea name="message" placeholder="Enter your message here, thanks!"></textarea>
+                    <label>WHAT IS <SPAN id="regnestykke"></SPAN>?</label>
+                    <input type="text" name="spamcheck" placeholder="Please prove that you're not a robot..">
+                    <div id="error"></div><input type="submit" value="SEND!">
+                </form>
+            </section>
+        </div>
+    </div><!-- WRAPPER END-->
+    <!-- SCRIPTS START-->
+    <script src="../js/js.js"></script>
+    <script src="../js/contact.js"></script>
+    <!-- SCRIPTS END-->
+</body>
+
+</html>

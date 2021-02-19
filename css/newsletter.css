@@ -1,0 +1,121 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  padding-bottom: 0px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+h3 {
+  color: #ff820d;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+span {
+  color: #fff;
+  margin-left: auto;
+}
+
+form {
+  width: 100%;
+  padding: 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: .5em;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+
+}
+
+::placeholder {
+  color: #555;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 1em;
+  border: 1px solid #fff;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 45px;
+}
+
+textarea {
+  resize: none;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+input[type="submit"] {
+  width: 300px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #ff820d;
+  margin-bottom: 0;
+  margin-left: auto;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+#error {
+  height: 30px;
+  color: red;
+  background-color: rgba(255, 255, 255);
+  border-radius: 5px;
+  align-self: center;
+  line-height: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+nav .fas {
+  color: #fff;
+}
+.contact .fas {
+  color: red;
+}
+
+#burger {
+  color: #ff820d;
+}
+
+@media screen and (max-width:1024px) {
+h3 {
+  color: #000;
+  text-align: center;
+  letter-spacing: 0px;
+  padding-bottom: 5px;
+}
+#error {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+h5 {
+  line-break: auto;
+}
+input[type="submit"] {
+  width: 200px;
+  margin-top: 0px;
+}
+}

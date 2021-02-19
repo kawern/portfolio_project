@@ -1,0 +1,32 @@
+#GalleriContainer {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+#Galleri {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+#KnapTilbage, #KnapFrem
+{
+    cursor: pointer;
+    background-color: #fff;
+}
+#GalleriBillede {
+    width: 100%;
+}
+#GalleriThumbnails {
+    display: inline-block;
+    margin-left: 10px;
+}
+#GalleriThumbnails a {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
